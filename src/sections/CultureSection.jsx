@@ -25,9 +25,9 @@ export default function CultureSection() {
             </div>
 
             <div className="relative min-h-[620px] lg:min-h-[1080px]">
-              <CultureImage imageData={images.top} delay={0.5} style="absolute right-[6%] top-0 z-10 h-[170px] w-[78%]" />
-              <CultureImage imageData={images.middle} delay={0.8} style="absolute left-[2%] top-[86px] z-20 h-[330px] w-[92%]" />
-              <CultureImage imageData={images.bottom} delay={1} style="absolute right-[0%] top-[372px] z-30 h-[250px] w-[78%]" />
+              <CultureImage imageData={images.top} delay={0.5} className="absolute right-[6%] top-0 z-10 h-[170px] w-[78%]" />
+              <CultureImage imageData={images.middle} delay={0.8} className="absolute left-[2%] top-[86px] z-20 h-[330px] w-[92%]" />
+              <CultureImage imageData={images.bottom} delay={1} className="absolute right-[0%] top-[372px] z-30 h-[250px] w-[78%]" />
             </div>
           </div>
 

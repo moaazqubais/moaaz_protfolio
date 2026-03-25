@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import ArrowIcon from './ArrowIcon'; // استيراد مكون الأيقونة
-import Reveal from "../animations/Reveal"; // استيراد الأنيميشن من كلاس Reveal
 
 export default function NewsCard({ item, index }) {
   const animationDirection = index % 2 === 0 ? 100 : -100;
