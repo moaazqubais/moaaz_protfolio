@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import AboutSection from "./sections/AboutSection";
+import CultureSection from "./sections/CultureSection";
+import FeaturedEngagementsSection from "./sections/FeaturedEngagementsSection";
+import FooterSection from "./components/layout/FooterSection";
+import HeroSection from "./sections/HeroSection";
+import NewsSection from "./sections/NewsSection";
+import WorkSection from "./sections/WorkSection";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<main className="min-h-screen bg-[#111111]">
+<div className="overflow-hidden">
+        <HeroSection />
+        <AboutSection />
+        <WorkSection />
+        <FeaturedEngagementsSection />
+        <CultureSection />
+        <NewsSection />
+        <FooterSection />
+      </div>
+    </main>
   );
 }
-
-export default App;
