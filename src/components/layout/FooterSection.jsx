@@ -2,7 +2,7 @@ import { footerSectionData } from "../../Data/data";
 
 export default function FooterSection() {
   return (
-    <footer className="w-full bg-[#111111] text-white">
+    <footer id="contact" className="w-full bg-[#111111] text-white">
       <div className="w-full bg-[#1b1b1b] px-8 py-6 sm:px-10 md:px-14 md:py-8 lg:px-16 lg:py-8">
         <div className="grid min-h-[240px] grid-cols-1 gap-12 md:grid-cols-[220px_1fr] md:gap-10 lg:min-h-[280px] lg:grid-cols-[260px_1fr]">
           <div className="flex items-start">
@@ -24,6 +24,16 @@ export default function FooterSection() {
                 className="mt-2 inline-block text-[2rem] font-semibold leading-[0.98] tracking-[-0.06em] text-white underline underline-offset-[6px] sm:text-[2.3rem] md:text-[2.8rem] lg:text-[3.2rem]"
               >
                 {footerSectionData.email}
+              </a>
+
+              {/* إضافة رقم الواتساب */}
+              <a
+                href={`https://wa.me/${footerSectionData.phone}`}
+                target="_blank" // فتح الرابط في نافذة جديدة
+                rel="noreferrer noopener" // إضافة rel لتحسين الأمان
+                className="mt-4 inline-block text-[2rem] font-semibold leading-[0.98] tracking-[-0.06em] text-white underline underline-offset-[6px] sm:text-[2.3rem] md:text-[2.8rem] lg:text-[3.2rem]"
+              >
+                {footerSectionData.phone}
               </a>
             </div>
           </div>

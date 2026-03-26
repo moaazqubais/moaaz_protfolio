@@ -10,7 +10,7 @@ export default function CardItem({ item, index }) {
       direction={direction}
       delay={delay}
       duration={1}
-      once={true}
+      once={false}
       amount={0.3}
       className="group"
     >

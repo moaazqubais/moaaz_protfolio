@@ -6,7 +6,7 @@ export default function FeaturedEngagementsSection() {
   const loopItems = [...items, ...items]; // تكرار العناصر مرتين لعمل loop سلس
 
   return (
-    <section className="bg-[#f3f3f3] px-6 py-12 text-[#111111] md:px-10 md:py-16 lg:px-14 lg:py-20">
+    <section id="engagements" className="bg-[#f3f3f3] px-6 py-12 text-[#111111] md:px-10 md:py-16 lg:px-14 lg:py-20">
       <div className="mx-auto max-w-[1400px]">
         {/* بيانات القسم العلوي */}
         <div className="flex items-center justify-between border-t border-black/20 pt-4">

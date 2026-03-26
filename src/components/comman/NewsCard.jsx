@@ -8,7 +8,7 @@ export default function NewsCard({ item, index }) {
     <motion.article
       initial={{ opacity: 0, x: animationDirection }}
       whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true, amount: 0.25 }}
+      viewport={{ once: false, amount: 0.25 }}
       transition={{ duration: 1, ease: "easeOut" }}
       className="border-t border-black/25 py-8 md:py-10 lg:py-12"
     >

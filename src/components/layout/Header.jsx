@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { heroContent, hederItems } from "../../Data/data";
+import { Link } from 'react-scroll'; // استيراد Link من react-scroll
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,14 +12,16 @@ export default function Header() {
 
   // دالة لإنشاء عناصر القائمة
   const renderMenuItems = () => {
-    return hederItems.map(item => (
-      <a
+    return hederItems.map((item) => (
+      <Link
         key={item}
-        href="/#"
+        to={item.toLowerCase()} // التوجه إلى القسم بناءً على الاسم
+        smooth={true}
+        duration={500}
         className="text-[14px] font-semibold tracking-[0.08em] text-white/85 transition-opacity duration-200 hover:opacity-70"
       >
         {item}
-      </a>
+      </Link>
     ));
   };
 

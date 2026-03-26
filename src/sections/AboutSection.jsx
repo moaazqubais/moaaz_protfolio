@@ -5,7 +5,7 @@ export default function AboutSection() {
   const { description, buttonText, logoText } = aboutSectionData;
 
   return (
-    <section className="bg-[#f3f3f3] px-6 py-14 text-[#111111] md:px-10 md:py-20 lg:px-14 lg:py-24">
+    <section id="about" className="bg-[#f3f3f3] px-6 py-14 text-[#111111] md:px-10 md:py-20 lg:px-14 lg:py-24">
       <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
         {/* القسم الأيسر مع الأنيميشن */}
         <Reveal direction="left" duration={1} amount={0.3}>
@@ -34,4 +34,4 @@ export default function AboutSection() {
       </div>
     </section>
   );
-}
+} 

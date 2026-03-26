@@ -1,12 +1,11 @@
 export const hederItems = [
-  "WORK",
   "ABOUT",
+  "WORK",
+  "ENGAGEMENTS",
+  "CULTURE",
   "NEWS",
-  "THINKING",
-  "PLEDGE",
-  "CAREERS",
   "CONTACT",
-];
+]; 
 
 export const heroContent = {
   brand: "BASIC/DEPT",
@@ -187,6 +186,7 @@ export const footerSectionData = {
     "and people. Let's build.",
   ],
   email: "moaazqubes12@gmail.com",
+  phone: "+963959051812", 
   links: [
     "STAY IN THE KNOW",
     "SOCIAL",

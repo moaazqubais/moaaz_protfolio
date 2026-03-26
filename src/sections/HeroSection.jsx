@@ -7,10 +7,10 @@ export default function HeroSection() {
   const { heroImage } = heroContent; // تفكيك القيم من heroContent لتحسين القابلية للقراءة
 
   return (
-    <section className="relative h-[calc(100vh-88px)] overflow-hidden">
+    <section className="relative h-screen overflow-hidden">
       {/* الخلفية الأساسية مع الصورة */}
       <motion.div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center h-full w-full"
         style={{
           backgroundImage: `url(${heroImage})`,
         }}

@@ -1,7 +1,7 @@
 
 import { motion } from "motion/react";
 
-const viewportOnce = { once: true, amount: 0.2 };
+const viewportOnce = { once: false, amount: 0.2 };
 
 export function CultureImage({ imageData, delay, className }) {
   return (

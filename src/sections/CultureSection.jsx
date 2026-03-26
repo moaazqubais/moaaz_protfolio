@@ -4,13 +4,13 @@ import { CultureBlock } from "../components/comman/CultureBlock";
 import { CultureImage } from "../components/comman/CultureImage";
 import { cultureSectionData } from "../Data/data";
 
-const viewportOnce = { once: true, amount: 0.2 };  // تعريف متغير viewportOnce
+const viewportOnce = { once: false, amount: 0.2 };  // تعريف متغير viewportOnce
 
 export default function CultureSection() {
   const { bottomSection, items, images } = cultureSectionData;
 
   return (
-    <section className="bg-[#f3f3f3] px-3 pb-3 pt-0 md:px-4">
+    <section id="culture" className="bg-[#f3f3f3] px-3 pb-3 pt-0 md:px-4">
       <div className="overflow-hidden border border-black/70 bg-[#1b1b1b]">
         <div className="relative mx-auto min-h-[920px] w-full max-w-[1600px] bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.06),transparent_45%)] px-6 pb-0 pt-3 sm:px-8 md:px-10 lg:min-h-[980px] lg:px-12">
           <div className="pointer-events-none absolute left-0 right-0 top-[76px] h-[1px] bg-black/35" />
